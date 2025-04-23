@@ -11,7 +11,7 @@ import java.util.Date;
  */
 public class RegistroServicio {
     
-    private Funcionario funcionario;
+        private Funcionario funcionario;
         private Servicio servicio;
         private Vehiculo vehiculo;
         private Date fecha;
@@ -23,10 +23,14 @@ public class RegistroServicio {
             this.fecha = fecha;
         }
 
-        public Funcionario getFuncionario() { return funcionario; }
-        public Servicio getServicio() { return servicio; }
-        public Vehiculo getVehiculo() { return vehiculo; }
-        public Date getFecha() { return fecha; }
+        public Funcionario getFuncionario() { 
+            return funcionario; }
+        public Servicio getServicio() { 
+            return servicio; }
+        public Vehiculo getVehiculo() { 
+            return vehiculo; }
+        public Date getFecha() { 
+            return fecha; }
 
         public double getCosto() {
             return servicio.calcularCosto(vehiculo.getTipo());

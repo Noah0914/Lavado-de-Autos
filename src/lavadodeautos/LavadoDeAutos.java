@@ -4,6 +4,9 @@
  */
 package lavadodeautos;
 
+import Controlador.ControladorRegistro;
+import Vista.PanelRegistroServicio;
+
 /**
  *
  * @author niday
@@ -14,7 +17,11 @@ public class LavadoDeAutos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+            ControladorRegistro controlador = new ControladorRegistro();
+        PanelRegistroServicio ventana = new PanelRegistroServicio(controlador);
+        ventana.setVisible(true);
+        PanelConsultaProduccion ventanaConsulta = new PanelConsultaProduccion(controlador);
+        ventanaConsulta.setVisible(true);
     }
     
 }
