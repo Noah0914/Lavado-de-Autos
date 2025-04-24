@@ -4,6 +4,7 @@
  */
 package lavadodeautos;
 
+import Vista.PanelConsultaProduccion;
 import Controlador.ControladorRegistro;
 import Vista.PanelRegistroServicio;
 
